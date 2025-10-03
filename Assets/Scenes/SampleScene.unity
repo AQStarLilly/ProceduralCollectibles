@@ -465,7 +465,7 @@ Transform:
   m_GameObject: {fileID: 14891623}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17, y: 2, z: 10}
+  m_LocalPosition: {x: -17, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -485,9 +485,10 @@ GameObject:
   - component: {fileID: 260691624}
   - component: {fileID: 260691623}
   - component: {fileID: 260691622}
+  - component: {fileID: 260691628}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -624,6 +625,21 @@ Transform:
   - {fileID: 1280848976}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &260691628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260691621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df08b6562ab9e449a0bdd861c72f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashKey: 101
+  dashSpeed: 15
+  activationDistance: 5
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,13 +1525,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004746cf04ce2f94fb1a90a98b2fa42f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectiblePrefab: {fileID: 1075062237542896711, guid: 0e61b1f8816e1f64d821aed59ea4009b, type: 3}
+  collectiblePrefab: {fileID: 6386698495323545937, guid: 382538a3a14c71345af89b2edaa06788, type: 3}
   platform1: {fileID: 540650640}
   platform2: {fileID: 14891629}
   collectibleCount: 15
   waveAmplitude: 0
   waveFrequency: 0
   verticalAmplitude: 0
+  heightOffset: 1
+  pathPoints: []
 --- !u!4 &1774076675
 Transform:
   m_ObjectHideFlags: 0
